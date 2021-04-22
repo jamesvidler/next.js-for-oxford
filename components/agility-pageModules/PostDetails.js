@@ -33,6 +33,7 @@ const PostDetails = ({ dynamicPageItem }) => {
           <h1 className="font-display text-4xl font-bold my-6 text-secondary-500">
             {post.title}
           </h1>
+          <h2>{post.longText}</h2>
           <div
             className="prose max-w-full mb-20"
             dangerouslySetInnerHTML={renderHTML(post.content)}
